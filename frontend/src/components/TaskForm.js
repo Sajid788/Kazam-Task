@@ -13,7 +13,7 @@ const TaskForm = ({ onTaskAdded }) => {
     setIsLoading(true);
     
     try {
-      await axios.post('http://localhost:3001/api/tasks', { text: taskText });
+      await axios.post('https://kazam-task.vercel.app/api/tasks', { text: taskText });
       setTaskText('');
       if (onTaskAdded) onTaskAdded();
     } catch (error) {

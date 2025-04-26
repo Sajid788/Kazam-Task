@@ -13,7 +13,7 @@ function App() {
     setError(null);
     
     try {
-      const response = await axios.get('http://localhost:3001/api/tasks/fetchAllTasks');
+      const response = await axios.get('https://kazam-task.vercel.app/api/tasks/fetchAllTasks');
       setTasks(response.data);
     } catch (err) {
       console.error('Error fetching tasks:', err);
@@ -29,7 +29,7 @@ function App() {
     if (!taskText.trim()) return;
     
     try {
-      await axios.post('http://localhost:3001/api/tasks', { text: taskText });
+      await axios.post('https://kazam-task.vercel.app/api/tasks', { text: taskText });
       setTaskText('');
       fetchTasks();
     } catch (error) {
