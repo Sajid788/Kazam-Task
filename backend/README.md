@@ -51,7 +51,7 @@ This is the backend server for the Kazam Task Management application, built with
 
 ### Tasks
 
-- `GET /api/tasks` - Get all tasks
+- `GET /api/tasks/fetchAllTasks` - Get all tasks
 - `POST /api/tasks` - Create a new task
 
 ## Project Structure
