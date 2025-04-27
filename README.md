@@ -50,6 +50,10 @@ The project is divided into two main parts:
 - Data caching with Redis
 - Responsive UI built with React and Tailwind CSS
 
+## Screen Shut
+![image](https://github.com/user-attachments/assets/6b314077-c5cb-46a7-b5a8-9548840983b2)
+
+
 ## Documentation
 
 For detailed information:
