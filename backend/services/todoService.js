@@ -22,7 +22,7 @@ const addTask = async (taskText) => {
     if (tasks.length > MAX_CACHE_ITEMS) {
       try {
         await moveTasksToMongoDB(tasks);
-        tasks = []; // Clear the cache
+        tasks = []; 
       } catch (error) {
         console.error('Error moving tasks to MongoDB, keeping in cache:', error);
       }
