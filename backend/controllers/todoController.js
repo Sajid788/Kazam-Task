@@ -11,7 +11,7 @@ const getAllTasks = async (req, res) => {
   }
 };
 
-// Add Task
+// create the  Task
 const createTask = async (req, res) => {
   try {
     const { text } = req.body;
